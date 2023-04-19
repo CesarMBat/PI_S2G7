@@ -1,4 +1,9 @@
 from django.contrib import admin
-from .models import Post
+from .models import *
 
-admin.site.register(Post)
+admin.site.register(Tutor)
+admin.site.register(Especie)
+admin.site.register(Sexo)
+admin.site.register(Porte)
+admin.site.register(Raça)
+admin.site.register(Animal)
