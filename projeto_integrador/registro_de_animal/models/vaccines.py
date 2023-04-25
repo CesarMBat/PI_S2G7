@@ -12,5 +12,5 @@ class Vacina(models.Model):
     vac_validade = models.DateField()
     animal_id = models.ForeignKey('Animal', on_delete=models.CASCADE)
 
-    def __str__(self): 
+    def __str__(self):
         return self.vac_nome
