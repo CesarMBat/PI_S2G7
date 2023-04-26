@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meus Pets - Sistema de controle de saúde de animais</title>
+  <!-- Link para a biblioteca Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+
+  <style>
+    .header {
+      width: 100%;
+      height: 33.33vh;
+      background: url("https://images.pexels.com/photos/356378/pexels-photo-356378.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940") no-repeat center center fixed;
+      background-size: cover;
+    }
+
+
+
+
+  </style>
+</head>
+<body>
+
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand disabled" href="inicial.html">PetMedVida</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="inicial.html">Ínicio</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Animais
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="cadastro_animal.html">Cadastrar Pet</a></li>
+              <li><a class="dropdown-item" href="meus_pets.html">Meus Pets</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Meu Perfil</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contato</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+    <div class="header"></div>
+
+    <!-- Conteúdo -->
+    <div class="container">
+      <h1 class="mt-4 mb-4">Meus Pets</h1>
+      <div class="table-responsive ">
+        <table class="table table-hover">
+          <thead>
+            <tr>
+              <th scope="col">Nome</th>
+              <th scope="col">Espécie</th>
+              <th scope="col">Raça</th>
+              <th scope="col">Vacinas</th>
+              <th scope="col">Histórico de Peso</th>
+              <th scope="col">Histórico de Consultas</th>
+              <th scope="col">Histórico de Exames/Doenças</th>
+
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Frajola</td>
+              <td>Gato</td>
+              <td>Siames</td>
+              <td><a href="{url_do_historico_de_exames}" class="btn btn-dark " data-bs-toggle="tooltip" data-bs-placement="top" title="Controle de Vacinas"><i class="bi bi-heart-arrow" style="font-size: 25px"></i><span class="sr-only"></span></a></td>
+              <td><a href="{url_do_historico_de_peso}" class="btn btn-dark " data-bs-toggle="tooltip" data-bs-placement="top" title="Histórico de Peso"><i class="bi bi-clipboard-pulse" style="font-size: 25px"></i><span class="sr-only"></span></a></td>
+              <td><a href="{url_do_historico_de_consultas}" class="btn btn-dark " data-bs-toggle="tooltip" data-bs-placement="top" title="Histórico de Consultas"><i class="bi bi-list-check" style="font-size: 25px"></i><span class="sr-only"></span></a></td>
+              <td><a href="{url_do_historico_de_exames}" class="btn btn-dark " data-bs-toggle="tooltip" data-bs-placement="top" title="Histórico de Exames/Doenças"><i class="bi bi-clipboard-heart" style="font-size: 25px"></i><span class="sr-only"></span></a></td>
+            </tr>
+            <tr>
+              <td>Shiro</td>
+              <td>Cachorro</td>
+              <td>Bichon Frisé</td>
+              <td><a href="{url_do_historico_de_exames}" class="btn btn-dark " data-bs-toggle="tooltip" data-bs-placement="top" title="Controle de Vacinas"><i class="bi bi-heart-arrow" style="font-size: 25px"></i><span class="sr-only"></span></a></td>
+              <td><a href="{url_do_historico_de_peso}" class="btn btn-dark " data-bs-toggle="tooltip" data-bs-placement="top" title="Histórico de Peso"><i class="bi bi-clipboard-pulse" style="font-size: 25px"></i><span class="sr-only"></span></a></td>
+              <td><a href="{url_do_historico_de_consultas}" class="btn btn-dark " data-bs-toggle="tooltip" data-bs-placement="top" title="Histórico de Consultas"><i class="bi bi-list-check" style="font-size: 25px"></i><span class="sr-only"></span></a></td>
+              <td><a href="{url_do_historico_de_exames}" class="btn btn-dark " data-bs-toggle="tooltip" data-bs-placement="top" title="Histórico de Exames/Doenças"><i class="bi bi-clipboard-heart" style="font-size: 25px"></i><span class="sr-only"></span></a></td>
+            </tr>
+            <!-- Adicione mais linhas aqui para cada animal "bi bi-syringe fs-1"-->
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+
+  <!-- Link para a biblioteca Bootstrap JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.10.2/umd/popper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+</html>

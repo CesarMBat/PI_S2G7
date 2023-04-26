@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Registro | Controle de Saúde de Animais</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css">
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand disabled" href="inicial.html">PetMedVida</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="inicial.html">Ínicio</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Animais
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="cadastro_animal.html">Cadastrar Pet</a></li>
+              <li><a class="dropdown-item" href="meus_pets.html">Meus Pets</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Meu Perfil</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contato</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Conteúdo da página -->
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-6">
+        <h1>Cadastro de Usuário</h1>
+        <form>
+          <div class="mb-3">
+            <label for="inputNome" class="form-label">Nome completo</label>
+            <input type="text" class="form-control" id="inputNome">
+          </div>
+          <div class="mb-3">
+            <label for="inputEmail" class="form-label">Email</label>
+            <input type="email" class="form-control" id="inputEmail">
+          </div>
+          <div class="mb-3">
+            <label for="inputApelido" class="form-label">Apelido</label>
+            <input type="text" class="form-control" id="inputApelido">
+          </div>
+          <div class="mb-3">
+            <label for="inputSenha" class="form-label">Senha</label>
+            <input type="password" class="form-control" id="inputSenha">
+          </div>
+          <div class="mb-3">
+            <label for="inputConfirmarSenha" class="form-label">Confirmar senha</label>
+            <input type="password" class="form-control" id="inputConfirmarSenha">
+          </div>
+          <button type="submit" class="btn btn-dark">Registrar</button>
+        </form>
+      </div>
+      <div class="col-md-6">
+        <img src="https://images.pexels.com/photos/356378/pexels-photo-356378.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="img-fluid rounded" alt="Imagem de um cachorro">
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.10.2/umd/popper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

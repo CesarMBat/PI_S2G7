@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de controle de saúde de animais</title>
+
+    <!-- Link para a biblioteca Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css">
+
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="#">PetMedVida</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Início</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Animais
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="cadastro_animal.html">Adicionar pet</a></li>
+                <li><a class="dropdown-item" href="meus_pets.html">Ver pets cadastrados</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Relatório de saúde dos animais</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Sobre nós</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contato</a>
+            </li>
+            <li>
+              <a class="nav-link" href="login.html">Login</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Imagem de fundo -->
+    <div class="bg-image">
+      <img class="img-fluid" src="https://images.pexels.com/photos/356378/pexels-photo-356378.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Imagem de um cachorro">
+    </div>
+
+    <!-- Seção de apresentação do site -->
+    <section class="container my-5">
+        <div class="row">
+            <div class="col-md-6">
+              <h1>Bem-vindo ao PetMedVida!</h1>
+              <p>Com nosso sistema, você pode monitorar a saúde dos seus animais de estimação de forma fácil e eficiente. Adicione informações como peso, vacinas, exames e muito mais, e mantenha um histórico completo de saúde dos seus bichinhos. Além disso, nosso sistema permite que você compartilhe o perfil de seus animais com veterinários, petshops, condomínios e outros cuidadores.</p>
+              <p>Para começar, faça login ou crie uma conta:</p>
+              <a href="login.html" class="btn btn-dark">Login</a>
+            </div>
+          </div>
+        </section>
+    
+        <!-- Scripts do Bootstrap (jQuery e Popper.js) -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.10.2/umd/popper.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+      </body>
+    </html>

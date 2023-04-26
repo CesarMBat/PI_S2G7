@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - Sistema de controle de saúde de animais</title>
+  <!-- Link para a biblioteca Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css">
+  <style>
+    .header {
+      width: 100%;
+      height: 33.33vh;
+      background: url("https://images.pexels.com/photos/356378/pexels-photo-356378.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940") no-repeat center center fixed;
+      background-size: cover;
+    }
+  </style>
+</head>
+<body>
+
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand disabled" href="inicial.html">PetMedVida</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="inicial.html">Ínicio</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Animais
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="cadastro_animal.html">Cadastrar Pet</a></li>
+              <li><a class="dropdown-item" href="meus_pets.html">Meus Pets</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Meu Perfil</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contato</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+<!-- header -->
+<div class="header"></div>
+
+<!-- Conteúdo-->
+<div class="container">
+  <div class="row justify-content-center mt-5">
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-header">
+          <h4 class="text-center">Login</h4>
+        </div>
+        <div class="card-body text-center"> <!-- adicionando a classe text-center aqui -->
+          <form action="#" method="post">
+            <div class="form-floating mb-3">
+              <input type="email" name="email" id="email" class="form-control" placeholder="name@example.com" required>
+              <label for="email">E-mail</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="password" name="password" id="password" class="form-control" placeholder="Senha" required>
+              <label for="password">Senha</label>
+            </div>
+            <button type="submit" class="btn btn-dark btn-block">Entrar</button>
+          </form>
+          <hr>
+          <p class="text-center">Não possui uma conta? <a href="cadastro_usuario.html">Cadastre-se aqui</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <!-- Link para a biblioteca Bootstrap JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.10.2/umd/popper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
