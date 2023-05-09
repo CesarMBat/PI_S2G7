@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'registro_de_animal',
+    'saude_do_animal',
 ]
 
 MIDDLEWARE = [

@@ -10,7 +10,7 @@ class Vacina(models.Model):
     vac_num_dose = models.IntegerField()
     vac_fabricante = models.CharField(max_length=50)
     vac_validade = models.DateField()
-    animal_id = models.ForeignKey('Animal', on_delete=models.CASCADE)
+    animal_id = models.ForeignKey('registro_de_animal.animal', on_delete=models.CASCADE)
 
     def __str__(self):
         return self.vac_nome
