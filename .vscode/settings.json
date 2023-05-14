@@ -1,6 +1,4 @@
 {
-    "[python]": {
-        "editor.defaultFormatter": "ms-python.autopep8"
-    },
-    "python.formatting.provider": "none"
+    "appService.defaultWebAppToDeploy": "/subscriptions/a6a07f4d-c851-4267-8a6c-9eaa66e4bbea/resourceGroups/resource-petmedvida/providers/Microsoft.Web/sites/petmedvida",
+    "appService.deploySubpath": "."
 }
