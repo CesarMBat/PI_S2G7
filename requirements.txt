@@ -1,2 +1,5 @@
-django
+Django
+whitenoise
+django-rest-framework
 pillow
+psycopg2
